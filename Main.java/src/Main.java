@@ -1,19 +1,29 @@
+
+
 public class Main {
-    public static void main(String[] args) {
+   
+    public static void main(String args[]) {
 
 
-        Aritmetica calculo = new Aritmetica();
+        Disciplina disciplina = new Disciplina();
+        Geometrica geometrica = new Geometrica();
+        Aritmetica aritmetica = new Aritmetica();
         
-        // Geometrica calculo = new Geometrica()
         
-        Disciplina d = new Disciplina();
+        disciplina.setNome( "Padroes de Desenvolvimento");
+        disciplina.setP1(10); 
+        disciplina.setP2(5);
+       // disciplina.setSituacao();
+        disciplina.setCalcMedia(aritmetica);
+
         
-        d.setNome( "Padroes de Desenvolvimento");
-        d.setP1(10); 
-        d.setP2(5);
-        d.CalcularMedia();
-        
-        System.out.println(String.format("P1:%.2f P2:%.2f Media:%.2f  Situacao: %s",
-        d.getP1(),d.getP2(), d.getMedia(), d.getSituacao()));
+
+
+
+        System.out.println("P1:%.2f P2:%.2f Media:%.2f Situacao: %s",disciplina.getP1(), disciplina.getP2(),
+         disciplina.Calculo(), disciplina.getSituacao());
+
+           //"P1:%.2f P2:%.2f Media:%.2f Situacao: %s", disciplina.getP1(),disciplina.getP2(),disciplina.getCalcMedia(), disciplina.getSituacao()
+
     }
 }
