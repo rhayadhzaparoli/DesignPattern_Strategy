@@ -24,7 +24,7 @@ public class Disciplina {
     public void setP2(double p2) {
         this.p2 = p2;
     }
-    public void setSituacao(String situacao) {
+    public void setSituacao(double situacao) {
         this.situacao = situacao;
     }
     

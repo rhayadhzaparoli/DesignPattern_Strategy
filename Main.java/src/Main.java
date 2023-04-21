@@ -1,4 +1,4 @@
-
+import javax.net.ssl.SSLEngineResult.Status;
 
 public class Main {
    
@@ -20,10 +20,11 @@ public class Main {
 
 
 
-        System.out.println("P1:%.2f P2:%.2f Media:%.2f Situacao: %s",disciplina.getP1(), disciplina.getP2(),
+        System.out.println("P1:%.2f P2:%.2f Media:%.2f Situacao: %s",
+         disciplina.getP1(), disciplina.getP2(),
          disciplina.Calculo(), disciplina.getSituacao());
 
-           //"P1:%.2f P2:%.2f Media:%.2f Situacao: %s", disciplina.getP1(),disciplina.getP2(),disciplina.getCalcMedia(), disciplina.getSituacao()
+         //"P1:%.2f P2:%.2f Media:%.2f Situacao: %s", disciplina.getP1(),disciplina.getP2(),disciplina.getCalcMedia(), disciplina.getSituacao()
 
     }
 }

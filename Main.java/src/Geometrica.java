@@ -9,11 +9,11 @@ public class Geometrica implements ICalcMedia {
     }
 
     @Override
-    public String Situacao(double status) {
-        if (status >= 7) {
-        return "Aprovado"; }
-        else {
-            return "Reprovado";
+    public String Situacao (double status) {
+        if (status >= 6) {
+            System.out.println("Aprovado"); 
+        }else {
+            System.out.println("Reprovado");
         }
     }
     
