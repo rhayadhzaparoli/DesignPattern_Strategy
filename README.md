@@ -7,5 +7,5 @@
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### Modelo de abstração para entendimento do design pattern Strategy.
-### Conteúdo teórico disponibilizado em sala de aula.
+#### Modelo de abstração para entendimento do design pattern Strategy.
+#### Conteúdo teórico disponibilizado em sala de aula.
