@@ -1,33 +1,23 @@
-import javax.net.ssl.SSLEngineResult.Status;
-
 public class Main {
    
     public static void main(String args[]) {
 
-
+        // instancias 
         Disciplina disciplina = new Disciplina();
-        Geometrica geometrica = new Geometrica();
         Aritmetica aritmetica = new Aritmetica();
-        
-        
-        disciplina.setNome( "Padroes de Desenvolvimento");
+        Geometrica geometrica = new Geometrica();
+
+        // instacia com sets e valores de uso
+        disciplina.setNome("Padroes de Desenvolvimento");
         disciplina.setP1(10); 
         disciplina.setP2(5);
-       //disciplina.setSituacao();
-       disciplina.setCalcMedia(aritmetica);
-
+        disciplina.setCalcMedia(geometrica);
         
-
-
-
-        System.out.println("P1:\t" +  disciplina.getP1());
-        System.out.println("P2:\t" + disciplina.getP2());
-        System.out.println("Media:\t" + disciplina.Calculo()); 
-        System.out.println("Situacao:\t" + disciplina.getSituacao()); 
-         
-         
-
-         //"P1:%.2f P2:%.2f Media:%.2f Situacao: %s", disciplina.getP1(),disciplina.getP2(),disciplina.getCalcMedia(), disciplina.getSituacao()
-
+        // output no console
+        System.out.println("Nome: " +  disciplina.getNome());
+        System.out.println("P1: " +  disciplina.getP1());
+        System.out.println("P2: " + disciplina.getP2());
+        System.out.println("Media: " + disciplina.calculaMedia()); 
+        System.out.println("Situacao: " + disciplina.getSituacao()); 
     }
 }

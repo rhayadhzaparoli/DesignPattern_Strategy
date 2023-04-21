@@ -1,16 +1,16 @@
 public class Geometrica implements ICalcMedia {
 
-        public double status;
+    private double media;
 
     @Override
-    public double CalculaMedia(double p1, double p2) {
-        status =  Math.sqrt(p1 * p2)/2 ;
-        return status;
+    public double calculaMedia(double p1, double p2) {
+        media =  Math.sqrt(p1 * p2)/2 ;
+        return media;
     }
 
-     @Override
-    public String Situacao(double status) {
-        if (status >= 6) {
+    @Override
+    public String situacao() {
+        if (media >= 6) {
             return "Aprovado"; 
         }  else {
             return "Reprovado";
@@ -20,3 +20,5 @@ public class Geometrica implements ICalcMedia {
     
     
 }
+
+

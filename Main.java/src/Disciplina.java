@@ -1,62 +1,51 @@
 public class Disciplina {
-    
-    private ICalcMedia CalcMedia;
+    //Classe para declaração de atributos e metodos
 
-    public double media;
+    //Atributos
+    private ICalcMedia calcMedia;
     private String nome; 
     private double p1;
     private double p2;
-    public String situacao;
-
+    
+    // Setters
     public void setCalcMedia(ICalcMedia calcMedia) {
-        CalcMedia = calcMedia;
+        this.calcMedia = calcMedia;
     }
     
-    public void setMedia(double media) {
-        this.media = media;
-    }
     public void setNome(String nome) {
         this.nome = nome;
     }
+    
     public void setP1(double p1) {
         this.p1 = p1;
     }
+    
     public void setP2(double p2) {
         this.p2 = p2;
     }
-    public void setSituacao(String situacao) {
-        this.situacao = situacao;
-    }
+       
     
-
-
-    public ICalcMedia getCalcMedia() {
-        return CalcMedia;
-    }
-    
-    public double getMedia() {
-        return media;
-    }
+    //Getters
     public String getNome() {
         return nome;
     }
+    
     public double getP1() {
         return p1;
     }
+    
     public double getP2() {
         return p2;
     }
+    
     public String getSituacao() {
-        return situacao;
+        return this.calcMedia.situacao(); // nesse retorno é pego com this da interface calcMadia traz situacao
     }
 
-    
-    public double Calculo()
-    {
-        return this.CalcMedia.CalculaMedia(this.p1, this.p2);
-
+    // Metodo getado da interface
+    public double calculaMedia() {
+        return this.calcMedia.calculaMedia(this.p1, this.p2); // nesse retorno é pego com this da interface calcMadia traz situacao com parametros getados anteriormente na p1 e p2
     }
-    
     
     
 }
